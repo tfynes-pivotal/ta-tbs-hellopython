@@ -1,0 +1,30 @@
+accelerator:
+  displayName: Tanzu Python Hello World
+  description: TBS packaged python hello world
+  iconUrl: https://github.com/tfynes-pivotal/ta-tbs-hellopython/blob/main/python-icon.png?raw=true
+  tags: []
+  options:
+  - name: appName
+    label: Application Name
+    display: true
+    defaultValue: "hellopython"
+  - name: targetRegistry
+    label: Target Image Registry
+    display: true
+    defaultValue: ""
+engine:
+  include:
+  - '**'
+
+  chain:
+    - type: ReplaceText
+      substitutions:
+      - text: hellopython
+        with: "#appName"
+    - type: ReplaceText
+      substitutions:
+      - text: <targetRegistry>
+        with: "#targetRegistry"
+
+
+
