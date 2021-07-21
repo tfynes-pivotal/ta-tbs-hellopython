@@ -1,4 +1,4 @@
-kp image create hellopython --tag <targetRegistry> --local-path . -w
+kp image create hellopython --tag https://<targetRegistry> --local-path . -w
 
 echo 
 echo k run hellopython --image=<targetRegistry> --restart=Never --env="PORT=8080"
