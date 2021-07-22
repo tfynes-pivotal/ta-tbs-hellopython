@@ -27,23 +27,23 @@ engine:
   - '**'
 
 
-    chain:
-      - type: ReplaceText
-        substitutions:
-        - text: hellopython
-          with: "#appName"
-      - type: ReplaceText
-        substitutions:
-        - text: <targetRegistry>
-          with: "#targetRegistry"
-      - type: ReplaceText
-        substitutions:
-        - text: hellopython
-          with: "#appName"
-      - type: ReplaceText
-        substitutions:
-        - text: <targetRegistry>
-          with: "#targetRegistry"
+  chain:
+    - type: ReplaceText
+      substitutions:
+      - text: hellopython
+        with: "#appName"
+    - type: ReplaceText
+      substitutions:
+      - text: <targetRegistry>
+        with: "#targetRegistry"
+    - type: ReplaceText
+      substitutions:
+      - text: hellopython
+        with: "#appName"
+    - type: ReplaceText
+      substitutions:
+      - text: <targetRegistry>
+        with: "#targetRegistry"
 
 
 
