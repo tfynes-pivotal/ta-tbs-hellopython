@@ -28,26 +28,26 @@ engine:
 
   - condition: "#targetPlatform == 'tbsTarget'"
     chain:
-    - type: ReplaceText
-      substitutions:
-      - text: hellopython
-        with: "#appName"
-    - type: ReplaceText
-      substitutions:
-      - text: <targetRegistry>
-        with: "#targetRegistry"
+      - type: ReplaceText
+        substitutions:
+        - text: hellopython
+          with: "#appName"
+      - type: ReplaceText
+        substitutions:
+        - text: <targetRegistry>
+          with: "#targetRegistry"
 
   - condition: "#targetPlatform == 'tasTarget'"
     include: [ "manifest.yml"]
     chain:
-    - type: ReplaceText
-      substitutions:
-      - text: hellopython
-        with: "#appName"
-    - type: ReplaceText
-      substitutions:
-      - text: <targetRegistry>
-        with: "#targetRegistry"
+      - type: ReplaceText
+        substitutions:
+        - text: hellopython
+          with: "#appName"
+      - type: ReplaceText
+        substitutions:
+        - text: <targetRegistry>
+          with: "#targetRegistry"
 
 
 
