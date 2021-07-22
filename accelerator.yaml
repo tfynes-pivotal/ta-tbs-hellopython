@@ -1,5 +1,5 @@
 accelerator:
-  displayName: Tanzu Python Hello World
+  displayName: Tanzu Python Hello World.
   description: TBS packaged python hello world
   iconUrl: https://github.com/tfynes-pivotal/ta-tbs-hellopython/blob/main/python-icon.png?raw=true
   tags: []
@@ -22,11 +22,11 @@ accelerator:
       - value: tas
         text: Tanzu Application Service
   - condition: "#targetPlatform == tbs"
-    - name: greeting
-      label: greeting
-      display: true
-      inputType: ReplaceText
-      defaultValue: "greeting"
+    name: greeting
+    label: greeting
+    display: true
+    inputType: ReplaceText
+    defaultValue: "greeting"
 
 engine:
   include:
