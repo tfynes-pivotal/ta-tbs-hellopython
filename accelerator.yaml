@@ -21,6 +21,11 @@ accelerator:
         text: Tanzu Build Service - Tanzu Kubernetes Grid
       - value: tas
         text: Tanzu Application Service
+  - name: greeting
+    label: greeting
+    display: true
+    inputType: ReplaceText
+    defaultValue: "greeting"
 
 engine:
   include:
