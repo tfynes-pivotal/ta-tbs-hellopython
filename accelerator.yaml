@@ -1,6 +1,6 @@
 accelerator:
   displayName: Tanzu Python Hello World
-  description: TBS packaged python hello world...
+  description: TBS packaged python hello world
   iconUrl: https://github.com/tfynes-pivotal/ta-tbs-hellopython/blob/main/python-icon.png?raw=true
   tags: []
   options:
@@ -12,6 +12,15 @@ accelerator:
     label: Target Image Registry
     display: true
     defaultValue: ""
+  - name: targetPlatform
+    label: Target targetPlatform
+    display: true
+    inputType: select
+    choices:
+      - value: tbsk8s
+        text: Tanzu Build Service - Tanzu Kubernetes Grid
+      - value: tas
+        text: Tanzu Application Service
 
 engine:
   include:
@@ -27,14 +36,7 @@ engine:
       substitutions:
       - text: targetRegistry
         with: "#targetRegistry"
-    - type: ReplaceText
-      substitutions:
-      - text: hellopython
-        with: "#appName"
-    - type: ReplaceText
-      substitutions:
-      - text: targetRegistry
-        with: "#targetRegistry"
+
 
 
 
