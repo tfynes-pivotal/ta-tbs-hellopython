@@ -17,15 +17,16 @@ accelerator:
     display: true
     inputType: select
     choices:
-      - value: tbsk8s
+      - value: tbs
         text: Tanzu Build Service - Tanzu Kubernetes Grid
       - value: tas
         text: Tanzu Application Service
-  - name: greeting
-    label: greeting
-    display: true
-    inputType: ReplaceText
-    defaultValue: "greeting"
+  - condition: "#targetPlatform == tbs"
+    - name: greeting
+      label: greeting
+      display: true
+      inputType: ReplaceText
+      defaultValue: "greeting"
 
 engine:
   include:
