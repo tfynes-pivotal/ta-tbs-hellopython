@@ -12,15 +12,6 @@ accelerator:
     label: Target Image Registry
     display: true
     defaultValue: ""
-  - name: targetPlatform
-    inputType: select
-    choices:
-    - value: tbsTarget
-      text: Tanzu Build Services / Kubernetes runtime
-    - value: tasTarget
-      text: Tanzu Application Service
-    defaultValue: tbsTarget
-    required: true
 
 engine:
   include:
