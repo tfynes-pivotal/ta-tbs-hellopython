@@ -17,6 +17,8 @@ accelerator:
     display: true
     inputType: select
     choices:
+      - value: tap
+        text: Tanzu Application Platform Supply Chain
       - value: tbs
         text: Tanzu Build Service - Tanzu Kubernetes Grid
       - value: tas
