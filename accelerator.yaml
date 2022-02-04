@@ -23,6 +23,11 @@ accelerator:
         text: Tanzu Build Service - Tanzu Kubernetes Grid
       - value: tas
         text: Tanzu Application Service
+  - name: sourceRepoPrefix
+    label: Source Repository Prefix
+    inputType: text
+    defaultValue: "https://github.com/.../
+    display: true
 
 
 engine:
@@ -39,6 +44,10 @@ engine:
       substitutions:
       - text: targetRegistry
         with: "#targetRegistry"
+    - type: ReplaceText
+      substitutions:
+      - text: sourceRepoPrefix
+        with: "#sourceRepoPrefix"
 
 
 
