@@ -1,5 +1,5 @@
-applications:
-- name: hellopython
+pplications:
+- name: appName
   disk_quota: 1G
   instances: 1
   memory: 1G

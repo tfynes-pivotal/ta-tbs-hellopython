@@ -38,7 +38,7 @@ engine:
   chain:
     - type: ReplaceText
       substitutions:
-      - text: hellopython
+      - text: appName
         with: "#appName"
     - type: ReplaceText
       substitutions:
