@@ -1,4 +1,4 @@
-pplications:
+applications:
 - name: appName
   disk_quota: 1G
   instances: 1
